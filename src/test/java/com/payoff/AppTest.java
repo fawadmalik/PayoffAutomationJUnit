@@ -1,8 +1,7 @@
 package com.payoff;
 
-import junit.framework.Test;
+import org.junit.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -43,6 +42,7 @@ public class AppTest extends TestCase
         this.driver.quit();
     }
 
+    @Test
     public void testSeleniumSetup() throws Exception {
         this.driver.get(baseURLs.get("google"));
         assertEquals("Google", this.driver.getTitle());
