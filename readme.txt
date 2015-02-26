@@ -6,8 +6,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=/Users/myang/apache-maven-3.2.5
 export PATH=$PATH:$M2_HOME/bin
 
-4. Unzip PayoffAutomation
-5. Go to PayoffAutomation folder via command line and type the following:
+4. Unzip PayoffAutomationJUnit
+5. Go to PayoffAutomationJUnit folder via command line and type the following:
 > mvn clean install
 
 6. WebDriver will kick to execute few tests
