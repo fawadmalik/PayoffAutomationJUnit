@@ -41,8 +41,7 @@ public class AppTest extends TestCase
     {
         this.driver.quit();
     }
-
-    @Test
+    
     public void testSeleniumSetup() throws Exception {
         this.driver.get(baseURLs.get("google"));
         assertEquals("Google", this.driver.getTitle());
