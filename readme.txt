@@ -14,4 +14,8 @@ or
 
 > mvn clean test -Dgroups="com.payoff.SetupTests" -X
 
+or
+
+> mvn clean test -Dgroups=SetupTests -X
+
 6. WebDriver will kick to execute few tests
