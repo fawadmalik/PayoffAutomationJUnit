@@ -10,4 +10,8 @@ export PATH=$PATH:$M2_HOME/bin
 5. Go to PayoffAutomationJUnit folder via command line and type the following:
 > mvn clean install
 
+or
+
+> mvn clean test -Dgroups="com.payoff.SetupTests" -X
+
 6. WebDriver will kick to execute few tests
