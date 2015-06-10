@@ -13,6 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
+    <!--this maven surefire version only works for running a single test-->
     <surefire.version>2.11</surefire.version>
     <surefire.junit47.version>2.12</surefire.junit47.version>
     <selenium.version>2.43.0</selenium.version>
