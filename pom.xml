@@ -14,6 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
     <surefire.version>2.11</surefire.version>
+    <surefire.junit47.version>2.12</surefire.junit47.version>
     <selenium.version>2.43.0</selenium.version>
     <selenium.ffdriver.version>2.44.0</selenium.ffdriver.version>
     <selenium.chmdriver.version>2.44.0</selenium.chmdriver.version>
@@ -23,7 +24,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -56,6 +57,13 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${surefire.version}</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-junit47</artifactId>
+            <version>${surefire.junit47.version}</version>
+          </dependency>
+        </dependencies>
         <configuration>
           <!-- This is to skip tests during normal maven execution
           (e.g. mvn package) and run them in integration-test -->

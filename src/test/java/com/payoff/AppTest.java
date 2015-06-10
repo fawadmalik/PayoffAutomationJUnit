@@ -44,14 +44,14 @@ public class AppTest extends TestCase
         this.driver.quit();
     }
 
-    //@Category(SetupTests.class) /* a way to use JUnit annotation to group test */
+    @Category(SetupTests.class) /* a way to use JUnit annotation to group test */
     @Test
     public void testSeleniumSetup() throws Exception {
         this.driver.get(baseURLs.get("google"));
         assertEquals("Google", this.driver.getTitle());
     }
 
-    //@Category(SetupTests.class)
+    @Category(SetupTests.class)
     @Test
     public void testPayOffSiteUp() throws Exception
     {
